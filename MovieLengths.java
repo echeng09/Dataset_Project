@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DataSetProject {
+public class MovieLengths {
     public static void main(String[] args) throws FileNotFoundException {
         idealMovieLength("/Users/echeng/Desktop/HCSS/CS_Seminar/top_100_movies_full_best_effort.csv");    
     }
@@ -66,7 +66,16 @@ public class DataSetProject {
         }
 
         //print out
+        System.out.println(String.format("Short - Average Rating: %.2f", shortAvg));
+        System.out.println(String.format("Med - Average Rating %.2f", medAvg));
+        System.out.println(String.format("Long - Average Rating %.2f", longAvg));
+        if (longAvg > shortAvg && longAvg > medAvg) {
+            System.out.println("Long movies (over 110 mins) are the most successful");
+        } else if (medAvg > longAvg && medAvg > shortAvg) {
+            System.out.println("Medium movies (between 90 to 110 mins) are the most successful");
+        } else if (shortAvg > longAvg && shortAvg > medAvg) {
+            System.out.println("Short movies (less than 90 mins) are the most successful");
+        }
 
     }
 }
-g
