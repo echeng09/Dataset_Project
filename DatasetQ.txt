@@ -1,0 +1,13 @@
+1)
+a. My general motivation for selecting this dataset was because I like watching movies and was curious about the information and data behind movies. I wanted to see the correlation behind a movie's success with other information about it.
+b. The data was taken from IMDb ratings, general info, and their overall rankings. It includes the movie name, release year, IMDb rating, number of votes, genre, film director, leading actors/actresses, and duration.
+c. I ended up answering my first question: What is the most ideal movie runtime (based on IMbd ratings)?
+
+2)
+a. I answered my question by comparing the average IMDb ratings from short, medium, and long movies to see which is the most successful. I extracted the IMDb rating value and the movie runtime/duration value. I seperated the movies into 3 different arrays (short: less than 90 mins, medium: 90-110 mins, and long: over 110 mins) and found the average rating for each array. 
+b. I used a || instead of a && in my code and it was causing errors in the code. Also, there were inconsistencies in the formatting in the dataset file. Because it is a smaller dataset, I was able to go through and fine issues. For example, in one movie title, there was a comma which affected my code. Also, there was a movie with no info other than its name. I manually removed the comma because the name wasn't needed and I also removed the movie with no info from the file. If my dataset was larger, I would create a method which checks whether the movie is valid or not.
+
+3)
+a. The final ratings show that long movies are the most successful, then short, and lastly medium. My takeaways are that movies over 110 mins are usually more successful and most likely because there is more detail in the films.
+b. I think that it may not be specific enough. Short, long, and medium lengths are subjective to each person and the medium duration may be too small, making the data less accurate. Some might consider medium length movies to be 80-120 which gives a wider range. There are a lot of long movies so maybe it's average is more accurate than the other two.
+c. If I had more time and resources, I would probably compare not just the rating, but also the box office money made, oscars won, and other ratings to make it more accurate. I would also maybe do smaller ranges and more lengths because there are only 3 now which makes the results a bit abstract. To go even further, I can find the "perfect", most successful movie which includes genre as well.
